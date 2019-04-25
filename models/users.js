@@ -10,12 +10,9 @@ const UserSchema = new Schema({
        type: String,
        required: true 
     },
-    firstName: {
-        type: String
-    },
-    lastName: {
-        type: String
-    },
+   name: {
+       type: String
+   },
     image: {
         type: String
     }
@@ -23,4 +20,4 @@ const UserSchema = new Schema({
 
 // create collection and scehma 
 
-mongoose.model('users', UserSchema);
+module.exports = mongoose.model('users', UserSchema);
