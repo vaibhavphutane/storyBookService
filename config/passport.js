@@ -6,7 +6,7 @@ module.exports =  function (passport) {
    passport.use( new GoogleStrategy({
     clientID: keys.googleClientID,
     clientSecret: keys.googleClientSercret,
-    callbackURL:'http://localhost:3000/auth/google/callback',
+    callbackURL:'https://sleepy-sea-39799.herokuapp.com/auth/google/callback',
     proxy: true
 },
 (accessToken, refreshToken, profile, done) => {

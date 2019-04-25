@@ -10,7 +10,6 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('It Works!');
 });
-
 app.use('/auth', auth);
 
 app.listen(port, (res) => {
